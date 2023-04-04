@@ -22,7 +22,7 @@ jobs:
           path: syncd
           
       - name: Print destination repository contents
-        run: ls -la sakethvaliveti1/syncd
+        run: ls -la syncd
       
       - name: Copy files to destination repository
         run: |
