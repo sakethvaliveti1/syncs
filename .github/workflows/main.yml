@@ -36,4 +36,4 @@ jobs:
           author_email: saketh.valiveti@aver.io
           message: 'Copy files from source-repo to destination-repo'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
