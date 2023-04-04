@@ -26,7 +26,7 @@ jobs:
         run: |
           find syncs -type f -name 'zxy*' -exec install -D -m 644 -t syncd/def/abc/kpi/ {} \;
           find syncs -type f -name 'abcd*' -exec install -D -m 644 -t syncd/abcd/abc/kpi/ {} \;
-          ls syncd/def/abc/kpi/
+          ls syncd/
 
       - name: Commit changes and push to destination repository
         uses: EndBug/add-and-commit@v9.1.1
