@@ -24,8 +24,8 @@ jobs:
       
       - name: Copy files to destination repository
         run: |
-          find syncs -type f -name 'def*' -exec install -D -m 644 {} syncd/def/abc/kpi/ \;
-          find syncs -type f -name 'abcd*' -exec install -D -m 644 {} syncd/abcd/abc/kpi/ \;
+          find syncs -type f -name 'def*' -exec install -d -m 644 {} syncd/def/abc/kpi/ \;
+          find syncs -type f -name 'abcd*' -exec install -d -m 644 {} syncd/abcd/abc/kpi/ \;
 
       - name: Commit changes and push to destination repository
         uses: EndBug/add-and-commit@v9.1.1
