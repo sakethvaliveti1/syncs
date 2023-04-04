@@ -9,18 +9,23 @@ jobs:
   copy_files:
     runs-on: ubuntu-latest
     steps:
+      - name: Print pwd
+        run: pwd
       - name: Checkout source repository
         uses: actions/checkout@v2
         with:
           repository: sakethvaliveti1/syncs
           path: syncs
+      - name: Print pwd
+        run: pwd
       
       - name: Checkout destination repository
         uses: actions/checkout@v2
         with:
           repository: sakethvaliveti1/syncd
           path: syncd
-          
+      - name: Print pwd
+        run: pwd
       - name: Print destination repository contents
         run: ls -la syncd
       
@@ -39,6 +44,5 @@ jobs:
           author_name: Saketh Valiveti
           author_email: saketh.valiveti@aver.io
           message: 'Copy files from source-repo to destination-repo'
-          force: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
