@@ -20,6 +20,9 @@ jobs:
         with:
           repository: sakethvaliveti1/syncd
           path: syncd
+          
+      - name: Print destination repository contents
+        run: ls -la destination-repo
       
       - name: Copy files to destination repository
         run: |
