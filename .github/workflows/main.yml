@@ -29,6 +29,9 @@ jobs:
           find syncs -type f -name 'def*' -exec cp {} syncd/def/abc/kpi/ \;
           find syncs -type f -name 'abcd*' -exec cp {} syncd/abcd/abc/kpi/ \;
       
+      - name: Print destination repository contents again
+        run: ls -la syncd
+      
       - name: Commit changes and push to destination repository
         uses: EndBug/add-and-commit@v7.0.0
         with:
