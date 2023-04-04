@@ -19,7 +19,7 @@ jobs:
                   API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
               with:
                   source_file: "sfolder/text.txt" # Folder to copy
-                  destination_repo: "syncd" # Target repo
+                  destination_repo: "sakethvaliveti1/syncd" # Target repo
                   destination_folder: "dfolder/" # Folder where to copy it
                   user_email: "saketh.valiveti@aver.io"
                   user_name: "sakethvaliveti1"
