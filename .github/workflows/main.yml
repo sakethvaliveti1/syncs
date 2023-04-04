@@ -27,13 +27,10 @@ jobs:
           find syncs -type f -name 'def*' -exec cp {} syncd/def/abc/kpi/ \;
           find syncs -type f -name 'abcd*' -exec cp {} syncd/abcd/abc/kpi/ \;
       
-      - name: Print destination repository contents again
-        run: ls -la syncd
-      
       - name: Commit changes and push to destination repository
-        uses: EndBug/add-and-commit@v7.0.0
+        uses: EndBug/add-and-commit@v9.1.1
         with:
-          directory: syncd
+          add: syncd
           author_name: Saketh Valiveti
           author_email: saketh.valiveti@aver.io
           message: 'Copy files from source-repo to destination-repo'
