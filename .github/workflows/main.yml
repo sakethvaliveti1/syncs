@@ -16,7 +16,6 @@ jobs:
         with:
           repository: sakethvaliveti1/syncs
           path: syncs
-          token: ${{ secrets.API_TOKEN_GITHUB }}
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
       
@@ -25,7 +24,6 @@ jobs:
         with:
           repository: sakethvaliveti1/syncd
           path: syncd
-          token: ${{ secrets.API_TOKEN_GITHUB }}
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
       
@@ -41,6 +39,5 @@ jobs:
           author_name: Saketh Valiveti
           author_email: saketh.valiveti@aver.io
           message: 'Copy files from source-repo to destination-repo'
-          token: ${{ secrets.API_TOKEN_GITHUB }}
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
